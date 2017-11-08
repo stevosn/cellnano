@@ -87,6 +87,11 @@ dashs = [(),                  # line
          (10, 2, 1, 2, 5, 2, 1, 2),   # daaaash, dot, daash, dot
          ]
 
+def reset_rcParams():
+    now = mpl.rcParams.copy()
+    mpl.rcParams = _prev_rc.copy()
+    _prev_rc = now
+
 def set_lines_marker_style(style='both', omit_markers=False):
     """
     Set the rcParams to either 'both', 'bw' or 'color'.
