@@ -18,3 +18,4 @@ import matplotlib as mpl
 
 _prev_rc = mpl.rcParams.copy()
 
+from cellnano import *
