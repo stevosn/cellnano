@@ -21,6 +21,7 @@
 import matplotlib as mpl
 from cycler import cycler
 
+from . import _previous
 
 from IPython import get_ipython
 import ipykernel
