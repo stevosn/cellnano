@@ -101,7 +101,7 @@ prev_rc = {}
 def reset_rcParams():
     now = mpl.rcParams.copy()
     mpl.rcParams = prev_rc.copy()
-    prev_rc = now
+    #prev_rc = now
 
 def set_lines_marker_style(style='both', omit_markers=False):
     """
