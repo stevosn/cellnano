@@ -31,7 +31,7 @@ if (hasattr(ipykernel, 'zmqshell')
     and isinstance(ip, ipykernel.zmqshell.ZMQInteractiveShell)):
     mpl.use('nbAgg')
 
-_previous = mpl.rcParams.copy()
+#_previous = mpl.rcParams.copy()
 
 mpl.rcParams['lines.linewidth'] = 1.0
 mpl.rcParams['lines.markeredgewidth'] = 0.0
