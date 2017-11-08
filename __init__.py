@@ -16,10 +16,5 @@ __status__ = "stable"
 
 import matplotlib as mpl
 
-_previous = mpl.rcParams.copy()
-
-def reset_rcParams():
-    now = mpl.rcParams.copy()
-    mpl.rcParams = _previous.copy()
-    _previous = now
+_prev_rcP = mpl.rcParams.copy()
 
