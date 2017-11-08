@@ -31,6 +31,8 @@ if (hasattr(ipykernel, 'zmqshell')
     and isinstance(ip, ipykernel.zmqshell.ZMQInteractiveShell)):
     mpl.use('nbAgg')
 
+_previous = mpl.rcParams.copy()
+
 mpl.rcParams['lines.linewidth'] = 1.0
 mpl.rcParams['lines.markeredgewidth'] = 0.0
 mpl.rcParams['lines.markersize'] = 6
@@ -87,7 +89,12 @@ dashs = [(),                  # line
          (10, 2, 5, 2),       # daaaash, daash,
          (10, 2, 1, 2, 5, 2, 1, 2),   # daaaash, dot, daash, dot
          ]
-    
+
+def reset_rcParams():
+    now = mpl.rcParams.copy()
+    mpl.rcParams = _previous.copy()
+    _previous = now
+
 def set_lines_marker_style(style='both', omit_markers=False):
     """
     Set the rcParams to either 'both', 'bw' or 'color'.
