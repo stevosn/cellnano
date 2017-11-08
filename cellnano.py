@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 #
-# Author: Steve Simmert, steve.simmert@uni-tuebingen.de
-# Copyright: Oct 2017
-#
+# - Author: steve simmert
+# - GitHub: https://github.com/stevosn
+# - E-mail: steve.simmert@uni-tuebingen.de
+# - Copyright: 2017#
 ################################################################################
 # Setting matplotlib's rcParams to aggree with cellnano best practises
 #
@@ -17,6 +18,13 @@
 # cellnano.set_lines_marker_style(style='both', omit_markers=False)
 #
 ################################################################################
+__author__ = "Steve Simmert"
+__copyright__ = "Copyright 2017"
+__credits__ = []
+__license__ = "Apache-2.0"
+__maintainer__ = "Steve Simmert"
+__email__ = "steve.simmert@uni-tuebingen.de"
+__status__ = "stable"
 
 import matplotlib as mpl
 from cycler import cycler
@@ -87,12 +95,12 @@ dashs = [(),                  # line
          (10, 2, 1, 2, 5, 2, 1, 2),   # daaaash, dot, daash, dot
          ]
 
-_prev_rc = mpl.rcParams.copy()
+prev_rc = mpl.rcParams.copy()
 
 def reset_rcParams():
     now = mpl.rcParams.copy()
-    mpl.rcParams = _prev_rc.copy()
-    _prev_rc = now
+    mpl.rcParams = prev_rc.copy()
+    prev_rc = now
 
 def set_lines_marker_style(style='both', omit_markers=False):
     """
