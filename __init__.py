@@ -16,6 +16,6 @@ __status__ = "stable"
 
 import matplotlib as mpl
 
-_prev_rc = mpl.rcParams.copy()
+#_prev_rc = mpl.rcParams.copy()
 
 from .cellnano import *
