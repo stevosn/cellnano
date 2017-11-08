@@ -14,7 +14,7 @@ __email__ = "steve.simmert@uni-tuebingen.de"
 __status__ = "stable"
 
 
-import matplotlib as mpl
+#import matplotlib as mpl
 
 #_prev_rc = mpl.rcParams.copy()
 
