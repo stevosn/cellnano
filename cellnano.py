@@ -95,7 +95,8 @@ dashs = [(),                  # line
          (10, 2, 1, 2, 5, 2, 1, 2),   # daaaash, dot, daash, dot
          ]
 
-prev_rc = mpl.rcParams.copy()
+#prev_rc = mpl.rcParams.copy()
+prev_rc = {}
 
 def reset_rcParams():
     now = mpl.rcParams.copy()
