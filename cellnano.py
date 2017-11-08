@@ -95,13 +95,13 @@ dashs = [(),                  # line
          (10, 2, 1, 2, 5, 2, 1, 2),   # daaaash, dot, daash, dot
          ]
 
-#prev_rc = mpl.rcParams.copy()
-prev_rc = {}
+_prev_rc = mpl.rcParams.copy()
 
 def reset_rcParams():
+    global _prev_rc
     now = mpl.rcParams.copy()
-    mpl.rcParams = prev_rc.copy()
-    #prev_rc = now
+    mpl.rcParams = _prev_rc.copy()
+    _prev_rc = now
 
 def set_lines_marker_style(style='both', omit_markers=False):
     """
