@@ -101,6 +101,10 @@ dashs = [(),                  # line
 
 _prev_rc = mpl.rcParams.copy()
 
+def apply_cnstyle():
+    _prev_rc = mpl.rcParams.copy()
+    mpl.rcParams.update(cnstyle)
+
 def reset_rcParams():
     global _prev_rc
     now = mpl.rcParams.copy()
