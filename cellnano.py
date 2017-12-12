@@ -38,36 +38,40 @@ if (hasattr(ipykernel, 'zmqshell')
     and isinstance(ip, ipykernel.zmqshell.ZMQInteractiveShell)):
     mpl.use('nbAgg')
 
-mpl.rcParams['lines.linewidth'] = 1.0
-mpl.rcParams['lines.markeredgewidth'] = 0.0
-mpl.rcParams['lines.markersize'] = 6
-mpl.rcParams['font.size'] = 9.0
-#mpl.rcParams['font.sans-serif'] = ['Helvetica', 'FreeSans']
-#mpl.rcParams['mathtext.fontset'] = 'custom'
-mpl.rcParams['axes.linewidth'] = 0.5
-mpl.rcParams['axes.titlesize'] = 'medium'
 
-mpl.rcParams['xtick.top'] = True
-mpl.rcParams['xtick.major.size'] = 3.2
-mpl.rcParams['xtick.minor.size'] = 1.8
-mpl.rcParams['xtick.major.width'] = 0.5
-mpl.rcParams['xtick.minor.width'] = 0.5
-mpl.rcParams['ytick.right'] = True
-mpl.rcParams['ytick.major.size'] = 3.2
-mpl.rcParams['ytick.minor.size'] = 1.8
-mpl.rcParams['ytick.major.width'] = 0.5
-mpl.rcParams['ytick.minor.width'] = 0.5
-mpl.rcParams['grid.linewidth'] = 0.5
-mpl.rcParams['legend.framealpha'] = 0.7
-mpl.rcParams['legend.edgecolor'] = 'none'
-mpl.rcParams['legend.fancybox'] = True
-mpl.rcParams['legend.numpoints'] = 1
-mpl.rcParams['legend.handlelength'] = 3.0
-mpl.rcParams['figure.titlesize'] = 'medium'
-mpl.rcParams['figure.figsize'] = (6.89, 4.59)  # 3:2 format
-mpl.rcParams['figure.dpi'] = 100
-mpl.rcParams['savefig.dpi'] = 150
-mpl.rcParams['svg.fonttype'] = 'none'
+# mpl.rcParams['font.sans-serif'] = ['Helvetica', 'FreeSans']
+# mpl.rcParams['mathtext.fontset'] = 'custom'
+
+cnstyle = {'lines.linewidth': 1.0,
+           'lines.linewidth'] = 1.0,
+           'lines.markeredgewidth': 0.0,
+           'lines.markersize': 6,
+           'font.size': 9.0,
+           'axes.linewidth': 0.5,
+           'axes.titlesize': 'medium',
+           'xtick.top': True,
+           'xtick.major.size': 3.2,
+           'xtick.minor.size': 1.8,
+           'xtick.major.width': 0.5,
+           'xtick.minor.width': 0.5,
+           'ytick.right': True,
+           'ytick.major.size': 3.2,
+           'ytick.minor.size': 1.8,
+           'ytick.major.width': 0.5,
+           'ytick.minor.width': 0.5,
+           'grid.linewidth': 0.5,
+           'legend.framealpha': 0.7,
+           'legend.edgecolor': 'none',
+           'legend.fancybox': True,
+           'legend.numpoints': 1,
+           'legend.handlelength': 3.0,
+           'figure.titlesize': 'medium',
+           'figure.figsize': (6.89, 4.59),  # 3:2 format
+           'figure.dpi': 100,
+           'savefig.dpi': 150,
+           'svg.fonttype': 'none',]
+
+mpl.rcParams.update(cnstyle)
 
 cols = ['k',       # black
         '#1f77b4', # blue
