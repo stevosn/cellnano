@@ -43,7 +43,7 @@ if (hasattr(ipykernel, 'zmqshell')
 # mpl.rcParams['mathtext.fontset'] = 'custom'
 
 cnstyle = {'lines.linewidth': 1.0,
-           'lines.linewidth'] = 1.0,
+           'lines.linewidth': 1.0,
            'lines.markeredgewidth': 0.0,
            'lines.markersize': 6,
            'font.size': 9.0,
