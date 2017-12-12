@@ -69,7 +69,7 @@ cnstyle = {'lines.linewidth': 1.0,
            'figure.figsize': (6.89, 4.59),  # 3:2 format
            'figure.dpi': 100,
            'savefig.dpi': 150,
-           'svg.fonttype': 'none',]
+           'svg.fonttype': 'none'}
 
 mpl.rcParams.update(cnstyle)
 
