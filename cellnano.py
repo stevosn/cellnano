@@ -104,6 +104,7 @@ _prev_rc = mpl.rcParams.copy()
 
 def apply_cnstyle():
     _prev_rc = mpl.rcParams.copy()
+    mpl.rcParams.update(mpl.rcParamsDefault)
     mpl.rcParams.update(cnstyle)
 
 
