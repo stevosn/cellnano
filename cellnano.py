@@ -121,7 +121,7 @@ def set_markers_only(style='bw'):
     """
     if style.lower() in ['bw', 'blackwhite', 'blacknwhite', 'black']:
         cl = cycler(cycler('color', ['k']) * marker=markers)
-    else
+    else:
         cl = cycler(color=cols, marker=markers)
         
     mpl.rcParams['axes.prop_cycle'] = cl
