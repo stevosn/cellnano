@@ -101,15 +101,30 @@ dashs = [(),                  # line
 
 _prev_rc = mpl.rcParams.copy()
 
+
 def apply_cnstyle():
     _prev_rc = mpl.rcParams.copy()
     mpl.rcParams.update(cnstyle)
+
 
 def reset_rcParams():
     global _prev_rc
     now = mpl.rcParams.copy()
     mpl.rcParams = _prev_rc.copy()
     _prev_rc = now
+
+
+def set_markers_only(style='bw'):
+    """
+    Set rcParams so no lines / dashes occur when plotting data.
+    """
+    if style.lower() in ['bw', 'blackwhite', 'blacknwhite', 'black']:
+        cl = cycler(cycler('color', ['k']) * marker=markers)
+    else
+        cl = cycler(color=cols, marker=markers)
+        
+    mpl.rcParams['axes.prop_cycle'] = cl
+
 
 def set_lines_marker_style(style='both', omit_markers=False):
     """
