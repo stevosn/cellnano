@@ -120,7 +120,7 @@ def set_markers_only(style='bw'):
     Set rcParams so no lines / dashes occur when plotting data.
     """
     if style.lower() in ['bw', 'blackwhite', 'blacknwhite', 'black']:
-        cl = cycler(cycler('color', ['k']) * marker=markers)
+        cl = (cycler('color', ['k']) * cycler(marker=markers))
     else:
         cl = cycler(color=cols, marker=markers)
         
