@@ -33,10 +33,10 @@ from IPython import get_ipython
 import ipykernel
 
 # set backend: to nbagg if jupyter is used
-ip = get_ipython()
-if (hasattr(ipykernel, 'zmqshell')
-    and isinstance(ip, ipykernel.zmqshell.ZMQInteractiveShell)):
-    mpl.use('nbAgg')
+#ip = get_ipython()
+#if (hasattr(ipykernel, 'zmqshell')
+#    and isinstance(ip, ipykernel.zmqshell.ZMQInteractiveShell)):
+#    mpl.use('nbAgg')
 
 
 # mpl.rcParams['font.sans-serif'] = ['Helvetica', 'FreeSans']
