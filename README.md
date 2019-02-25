@@ -1,4 +1,4 @@
-# cellnano
+# plot styles -- originates from cellnano
 
 Set up your matplotlib rcParams to meet the cellnano standards for figures.
 
